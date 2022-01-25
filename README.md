@@ -10,13 +10,13 @@ There are 3 software components to this project.
   
     o Contains TT Preferences screen for the API key
     
-    o Contains the File Data Entry screen for the 3rd party uploader
+    o Contains the File Data Entry screen for the 3rd party uploader (FileMigrator)
     
     o Contains Mobile Screen definitions to add a basic Stock Items (IN202500) screen to mobile with an action for attachments
 
     o Contains Business Event, Notication Template, and Generic Inquiry for Notification when NSFW image detected
 
-  • DataMigrationApp (standalone 3rd party application to send files to Acumatica via web services)
+  • FileMigrator (standalone 3rd party application to send files to Acumatica via web services)
   
   • Cloudmersive (https://cloudmersive.com/) 
   
@@ -40,4 +40,4 @@ Create a Cloudmersive account and select the FREE plan for the ability to make 8
 
 Copy the Cloudmersive API key and open the TT Preferences screen in the Theta workspace in Acumatica.  Paste the API key into the API Key field and save.  When the cap of 800 calls has been reached, this allows changing to a new key for another account easily.
 
-For the 3rd party mass file upload, copy the DataMigrationApp to your local PC and run DataMigrationApp.exe to run the tool.  Replace the default connection strings and select a folder with attachments to upload.  Press the upload button to execute.  Note that the TeamTheta project makes 1 to 8 calls per file depending on the file type as to what processing has been programmed to be performed.  Therefore, uploading 100 png files, for instance, will consume the entire use of the free cloudmersive monthly allotment of API calls.
+For the 3rd party mass file upload, copy the FileMigrator.exe file to your local PC (or download and compile the project) and run FileMigrator.exe to run the tool.  Replace the default connection strings and select a folder with attachments to upload.  Press the upload button to execute.  Note that the TeamTheta project makes 1 to 8 calls per file depending on the file type as to what processing has been programmed to be performed.  Therefore, uploading 100 png files, for instance, will consume the entire use of the free cloudmersive monthly allotment of API calls.
